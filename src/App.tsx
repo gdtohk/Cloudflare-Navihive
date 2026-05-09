@@ -973,10 +973,11 @@ function App() {
         )}
 
         <Container
-          maxWidth='lg'
+          maxWidth={false} // 修改为 false 取消最大宽度限制
+          disableGutters // 取消默认内边距
           sx={{
             py: 4,
-            px: { xs: 2, sm: 3, md: 4 },
+            px: { xs: 2, sm: 3, md: 4 }, // 保留左右的一点间距，避免贴边
             position: 'relative', // 使内容位于背景图片和蒙版之上
             zIndex: 2,
           }}
@@ -1647,3 +1648,4 @@ function App() {
 }
 
 export default App;
+```</Container>
