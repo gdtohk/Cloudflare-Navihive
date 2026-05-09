@@ -190,8 +190,8 @@ const GroupCard: React.FC<GroupCardProps> = ({
                         xs: '50%',
                         sm: '50%',
                         md: '25%',
-                        lg: '25%',
-                        xl: '25%',
+                        lg: '16.66%', // 编辑模式大屏幕：一行 6 个
+                        xl: '14.28%', // 编辑模式超大屏幕：一行 7 个
                       },
                       padding: 1, // 内部间距，更均匀的分布
                       boxSizing: 'border-box', // 确保padding不影响宽度计算
@@ -231,8 +231,8 @@ const GroupCard: React.FC<GroupCardProps> = ({
                 xs: '100%',
                 sm: '50%',
                 md: '33.33%',
-                lg: '25%',
-                xl: '20%',
+                lg: '16.66%', // 普通模式大屏幕：一行 6 个
+                xl: '14.28%', // 普通模式超大屏幕：一行 7 个
               },
               padding: 1, // 内部间距，更均匀的分布
               boxSizing: 'border-box', // 确保padding不影响宽度计算
